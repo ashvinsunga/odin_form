@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-container {
+    position: relative;
+    display: inline-block;
+}
+
+.title-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    top: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.odin-img {
+    width: 100px;
+    height: auto;
+
+}
+
+.title-container > h1 {
+    font-family: Norse-Bold,verdana, arial;
+    font-size: 100px;
+    color: white;
+}
