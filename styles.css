@@ -16,21 +16,27 @@
 
 .title-container {
     position: absolute;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     width: 100%;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
+    width: 100%;
     top: 25%;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .odin-img {
+    display: inline-block;
     width: 100px;
     height: auto;
+    vertical-align: middle;
 
 }
 
 .title-container > h1 {
+    display: inline-block;
+    vertical-align: middle;
     font-family: Norse-Bold,verdana, arial;
     font-size: 100px;
     color: white;
