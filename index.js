@@ -6,7 +6,7 @@ function checkPassword(){
     let message = document.getElementById("password-validation")
 
     if (userPassword.value !== userConfirm.value) {
-        message.textContent = "Passwords must be matched!"
+        message.textContent = "Passwords do not match!"
     } else {
         message.textContent = ""
     }
