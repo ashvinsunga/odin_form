@@ -6,17 +6,17 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main-container {
+    display: flex;
     background-color: black;
     padding: 0 15%;
 }
 
 .bg-container {
     position: relative;
-    display: inline-block;
     
 }
 
@@ -53,10 +53,85 @@
     color: white;
 }
 
+.root-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(245, 245, 245);
+}
+
+.message  {
+    width: 600px;
+    margin: 190px 30px 50px 30px;
+    height: auto;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.message > .italicized {
+    font-style: italic;
+}
+
+.odin-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .form-container {
-    background-color: whitesmoke;
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    height: 100vh;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 5px 10px gray;
+}
+
+.field-container {
+    display: flex;
+
+}
+
+.form-container h4 {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.input-form.left {
+    margin-left: 20px;
+}
+
+.input-form.right{
+margin-left: 60px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.input-field > label {
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+.form-button button {
+    background-color: rgb(71, 110, 58);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+
+.form-button,
+.login {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.form-button button,
+.login {
+    font-size: 12px;
 }
