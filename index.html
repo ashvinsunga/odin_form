@@ -11,9 +11,9 @@
     <div class="bg-container">
         <div class="title-container">
             <img class="odin-img" src="assets/odin-lined.png" alt="This is a Odin's face">
-            <h1>ODIN</h1>
+            <h1>THOR</h1>
         </div>
-        <img src="assets/leaves.jpg" alt="A background image" class="bg-image">
+        <img src="assets/volks.jpg" alt="A background image" class="bg-image">
     </div>
 
     <div class="root-container">
@@ -30,17 +30,18 @@
     
                             <div class="input-field">
                                 <label for="first-name">FIRST NAME</label>
-                                <input type="text" id="first-name" placeholder="Enter your first name">
+                                <input type="text" id="first-name" required placeholder="Enter your first name">
                             </div>
         
                             <div class="input-field">
                                 <label for="user-email">EMAIL</label>
-                                <input type="email" id="user-email" placeholder="Enter your email">
+                                <input type="email" id="user-email" required placeholder="Enter your email">
                             </div>
         
                             <div class="input-field">
                                 <label for="user-password">PASSWORD</label>
-                                <input type="password" id="user-password" placeholder="Enter your password">
+                                <input type="password" id="user-password" minlength="8" aria-describedby="password-validation" placeholder="Enter your password">
+                                <span id="password-validation" aria-live="assertive" class="validation-message"></span>
                             </div>
                     </div>
         
@@ -48,17 +49,17 @@
                
                         <div class="input-field">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" placeholder="Enter your last name">
+                            <input type="text" id="last-name" required placeholder="Enter your last name">
                         </div>
         
                         <div class="input-field">
                             <label for="user-number"> PHONE NUMBER</label>
-                            <input type="tel" id="user-number" placeholder="Enter your phone number">
+                            <input type="tel" id="user-number" required placeholder="Enter your phone number">
                         </div>
         
                         <div class="input-field">
                             <label for="user-confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="user-confirm" placeholder="Confirm your password">
+                            <input type="password" id="user-confirm"  minlength="8" placeholder="Confirm your password">
                         </div>
                     </div>
                 </div>
@@ -66,7 +67,7 @@
 
 
             <div class="form-button">
-                <button type="submit">Create Account</button>
+                <button type="submit" class="button-submit">Create Account</button>
             </div>
 
             <div class="login">

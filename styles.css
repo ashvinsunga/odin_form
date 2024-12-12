@@ -115,9 +115,31 @@ margin-left: 60px;
     margin-bottom: 5px;
 }
 
+.input-field input {
+    outline: none;
+    border: 1px solid #E5E7EB;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-field input:focus {
+    border-color:#2ea58f;
+    box-shadow: 1px 2px 2px gray;
+}
+
+#user-password:invalid,
+#user-confirm:invalid {
+    border-color: darkorchid;
+}
+
+#password-validation {
+    font-size: 0.7em;
+    margin-top: 0.5em;
+    color: darkorchid;
+}
 
 .form-button button {
-    background-color: rgb(71, 110, 58);
+    background-color: #2ea58f;
     color: white;
     padding: 10px 30px;
     border-radius: 5px;
@@ -134,4 +156,10 @@ margin-left: 60px;
 .form-button button,
 .login {
     font-size: 12px;
+}
+
+a[href] {
+    color: #2ea58f;
+    text-decoration: none;
+    font-weight: 600;
 }
